@@ -1,0 +1,13 @@
+{
+  "hosting": [
+    {
+      "target": "angular-blogging-app",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ],
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

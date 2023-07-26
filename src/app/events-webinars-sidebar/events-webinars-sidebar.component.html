@@ -1,0 +1,50 @@
+<!-- events-webinars-sidebar.component.html -->
+<div class="container-fluid">
+    <div class="row">
+      <!-- Main Content Area -->
+      <div class="col-lg-9 col-md-8">
+        <!-- Your main content goes here -->
+        <!-- This area will display the content based on the route configuration -->
+      </div>
+  
+      <!-- Right Sidebar -->
+      <div class="col-lg-3 col-md-4" >
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title"><b>Upcoming Events</b></h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let event of events">
+                <h6>{{ event.title }}</h6>
+                <img src="{{ event.imageUrl }}" alt="{{ event.title }}" class="img-fluid mb-2" width="200">
+                <p>Date: {{ event.date }}</p>
+                <p>Time: {{ event.time }}</p>
+                <a href="{{ event.link }}" target="_blank">Join Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="card-header">
+            <h5 class="card-title"><b>Upcoming Webinars</b></h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let webinar of webinars">
+                <h6>{{ webinar.title }}</h6>
+                <img src="{{ webinar.imageUrl }}" alt="{{ webinar.title }}" class="img-fluid mb-2" width="200">
+                <p>Date: {{ webinar.date }}</p>
+                <p>Time: {{ webinar.time }}</p>
+                <a href="{{ webinar.link }}" target="_blank">Register Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+

@@ -1,0 +1,45 @@
+.example-card {
+    max-width: 960px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .mat-card{
+    width: 100%;
+  }
+ .container {
+    margin-top: 62px;
+    max-width: 1200px;
+    left: 0;
+    position: absolute;
+ }
+
+ .image-button {
+    position: relative; /* Required for positioning the image */
+    border: none; /* Remove default button border */
+    background-color: #f1f1f1; /* Set button background color */
+    padding: 10px 20px; /* Set button padding */
+    font-size: 16px; /* Set font size for button text */
+  }
+
+  .image-button img {
+    position: absolute; /* Position the image absolutely within the button */
+    top: 50%; /* Move the image 50% down from the top of the button */
+    left: 50%; /* Move the image 50% in from the left of the button */
+    transform: translate(-50%, -50%); /* Center the image within the button */
+    width: 20px; /* Set the width of the image (adjust as needed) */
+    height: 20px; /* Set the height of the image (adjust as needed) */
+    /* Add any other image-specific styling you want */
+  }
+
+
+
+  
+  
+  
+  
+  
+  

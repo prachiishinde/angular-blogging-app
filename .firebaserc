@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "angular-blogging-f773b": {
+      "hosting": {
+        "angular-blogging-app": [
+          "angular-blogging-f773b"
+        ]
+      }
+    },
+    "blog-9d4f3": {
+      "hosting": {
+        "angular-blogging-app": [
+          "blog-9d4f3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "blog-9d4f3"
+  }
+}

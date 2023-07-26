@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>{{inputdata.title}}</h1>
+<div mat-dialog-content>
+   <mat-form-field>
+     <mat-label>Description</mat-label>
+     <input matInput>
+   </mat-form-field>
+</div>
+
+<div mat-dialog-content>
+    <label for="formFileLg" class="form-label"></label>
+    <input type="file" (change)="onFileChange($event)"> 
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="postImage()">Post</button>
+
+  <!-- Image element to display the retrieved image -->
+  <img *ngIf="inputdata.url" [src]="inputdata.url" alt="Retrieved Image" />
+  <button (click)="closepopup()" mat-raised-button color="accent">Close</button>
+</div>

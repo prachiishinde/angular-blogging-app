@@ -1,3 +1,4 @@
+// app.component.ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-blogging-app';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  // Component logic if any
 }
